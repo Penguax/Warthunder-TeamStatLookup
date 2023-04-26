@@ -17,7 +17,7 @@ These actions only need to be done once after downloading the repository.
 
 ## Game setup
 
-Make sure the game is running in Full SCreen window mode:
+Make sure the game is running in Full Screen window mode:
 
 <img src="https://github.com/Penguax/Warthunder-TeamStatLookup/blob/main/data/screen1.png">
 
