@@ -91,21 +91,21 @@ try:
                 if winrate == 0:
                     winrate = 50
                 
-                awins = divs[0].select('li:nth-last-of-type(3)')   
-                twins = divs[0].select('li:nth-last-of-type(2)')
-                mwins = divs[0].select('li:nth-last-of-type(1)')
+                airkills = divs[0].select('li:nth-last-of-type(3)')   
+                groundkills = divs[0].select('li:nth-last-of-type(2)')
+                navalkills = divs[0].select('li:nth-last-of-type(1)')
                 
-                awins = awins[diffNumber].text
-                if awins == "N/A":
-                    awins = 0 
-                twins = twins[diffNumber].text
-                if twins == "N/A":
-                    twins = 0 
-                mwins = mwins[diffNumber].text
-                if mwins == "N/A":
-                    mwins = 0      
-                sumwins = int(awins)+int(twins)+int(mwins)
-                kd = round(sumwins/int(battles), 2) 
+                airkills = airkills[diffNumber].text
+                if airkills == "N/A":
+                    airkills = 0 
+                groundkills = groundkills[diffNumber].text
+                if groundkills == "N/A":
+                    groundkills = 0 
+                navalkills = navalkills[diffNumber].text
+                if navalkills == "N/A":
+                    navalkills = 0      
+                sumkills = int(airkills)+int(groundkills)+int(navalkills)
+                kd = round(sumkills/int(battles), 2) 
                 
                 timeIstr = divs[1].select('li:nth-of-type(6)')
                 timesShturm = divs[1].select('li:nth-of-type(8)')
@@ -252,21 +252,21 @@ try:
                 if winrate == 0:
                     winrate = 50
                 
-                awins = divs[0].select('li:nth-last-of-type(3)')   
-                twins = divs[0].select('li:nth-last-of-type(2)')
-                mwins = divs[0].select('li:nth-last-of-type(1)')
+                airkills = divs[0].select('li:nth-last-of-type(3)')   
+                groundkills = divs[0].select('li:nth-last-of-type(2)')
+                navalkills = divs[0].select('li:nth-last-of-type(1)')
                 
-                awins = awins[diffNumber].text
-                if awins == "N/A":
-                    awins = 0 
-                twins = twins[diffNumber].text
-                if twins == "N/A":
-                    twins = 0 
-                mwins = mwins[diffNumber].text
-                if mwins == "N/A":
-                    mwins = 0      
-                sumwins = int(awins)+int(twins)+int(mwins)
-                kd = round(sumwins/int(battles), 2) 
+                airkills = airkills[diffNumber].text
+                if airkills == "N/A":
+                    airkills = 0 
+                groundkills = groundkills[diffNumber].text
+                if groundkills == "N/A":
+                    groundkills = 0 
+                navalkills = navalkills[diffNumber].text
+                if navalkills == "N/A":
+                    navalkills = 0      
+                sumkills = int(airkills)+int(groundkills)+int(navalkills)
+                kd = round(sumkills/int(battles), 2) 
                 
                 timeIstr = divs[1].select('li:nth-of-type(6)')
                 timesShturm = divs[1].select('li:nth-of-type(8)')
