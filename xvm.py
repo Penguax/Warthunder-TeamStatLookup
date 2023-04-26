@@ -44,7 +44,7 @@ try:
         
         #comand=["python", 'signal1.py']  
         #Popen(comand)                                                     
-        print("Программа ожидает сочетания клавиш")
+        print("Waiting for Keyboard shortcut")
 
         # def on_activate_CtrlN():
             # print("n")

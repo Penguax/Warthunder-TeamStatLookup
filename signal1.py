@@ -38,7 +38,7 @@ def signal1(queue):
 
         xvm = conf[0] or conf[1]
         if xvm == "":
-            print("кнопка для оленемера не назначена")
+            print("No keyboard shortcuts detected")
         
         obj = {}
         if conf[0]:

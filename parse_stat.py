@@ -46,7 +46,7 @@ try:
         #    chrome_options=options
         #)
         try:
-            driver = uc.Chrome(version_main=110, options=options, desired_capabilities=caps)
+            driver = uc.Chrome(version_main=112, options=options, desired_capabilities=caps)
         except AttributeError as e:
             driver = uc.Chrome(options=options, desired_capabilities=caps)
             file = open('error.log', 'a')
@@ -57,7 +57,7 @@ try:
         wait = WebDriverWait(driver, timeout=60, poll_frequency=0.1, ignored_exceptions=[NoSuchElementException])
         #i [name, team, winrate, kd, timeIstr, timesShturm]
         i = teams[0]
-        url = 'https://warthunder.ru/ru/community/userinfo/?nick=' + i[0]
+        url = 'https://warthunder.com/en/community/userinfo/?nick=' + i[0]
         try:
             driver.get(url)
             wait.until(EC.presence_of_element_located((By.ID, "toTop")))
@@ -173,7 +173,7 @@ try:
         #timeStartRequest = time.perf_counter()
         
         futures = [
-            session.get('https://warthunder.ru/ru/community/userinfo/?nick=' + i[0])
+            session.get('https://warthunder.com/en/community/userinfo/?nick=' + i[0])
             for i in teams[1:]
         ]
 
@@ -196,7 +196,7 @@ try:
                     retryArr.append(i)
             
             futures1 = [
-                session.get('https://warthunder.ru/ru/community/userinfo/?nick=' + teams[i+1][0])
+                session.get('https://warthunder.com/en/community/userinfo/?nick=' + teams[i+1][0])
                 for i in retryArr
             ]
         
@@ -593,7 +593,7 @@ try:
     #findstat(team2) 
 
     # print(element)
-    # driver.get('https://warthunder.ru/ru/community/userinfo/?nick=_ICU_Paimon')
+    # driver.get('https://warthunder.com/en/community/userinfo/?nick=_ICU_Paimon')
     # element = wait.until(EC.presence_of_element_located((By.ID, "bodyRoot")))
     # print(element)
           
